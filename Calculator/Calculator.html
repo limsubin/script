@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <LINK href="Calculator.css" type=text/css rel="stylesheet"/>
+
+</head>
+
+<body>
+
+    <h3>Simple Calcalator</h3>
+    <form>
+        <table>
+            <tr>
+                <td colspan=6>
+                    <input id="input" type="text" name="text" style=width:240 id="s1" placeholder="0"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value=C onclick=clear1()></td>
+                <td><input type=button value="←" onclick=backs()></td>
+
+                <td><input type="button" value="%" onclick=inp(this.value)></td>
+
+                <td><input type="button" value="/" onclick=inp(this.value)></td>
+
+            </tr>
+
+            <tr>
+                <td><input type="button" value=7 onclick=inp(this.value)></td>
+                <td><input type="button" value=8 onclick=inp(this.value)></td>
+                <td><input type=button value=9 onclick=inp(this.value)></td>
+                <td><input type=button value="*" onclick=inp(this.value)></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value=4 onclick=inp(this.value)></td>
+                <td><input type="button" value=5 onclick=inp(this.value)></td>
+                <td><input type="button" value=6 onclick=inp(this.value)></td>
+                <td><input type="button" value="-" onclick=inp(this.value)></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value=1 onclick=inp(this.value)></td>
+                <td><input type="button" value=2 onclick=inp(this.value)></td>
+                <td><input type="button" value=3 onclick=inp(this.value)></td>
+                <td><input type="button" value="+" onclick=inp(this.value)></td>
+            </tr>
+
+            <tr>
+                <td colspan=1>
+                    <input type="button" value=0></td>
+                <td colspan=1>
+                    <input type="button" value=00 onclick="onehundred()"></td>
+                <td><input type="button" value="." onclick=inp(this.value)></td>
+                <td colspan=2>
+                    <input type="button" value="=" onclick=sub()></td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" src="Calculator.js"></script>
+</body>
+
+</html>
