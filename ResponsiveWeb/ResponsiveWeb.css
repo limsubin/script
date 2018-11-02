@@ -1,0 +1,175 @@
+body {
+    /*중간정렬*/
+    margin: 0 auto;
+    width: 96%;
+}
+
+header {
+    /*상단 틀 잡아줌*/
+    width: 96%;
+    height: 96%;
+    margin: 2%;
+}
+
+header>h3 {
+    /*header 안에 있는 h3태그에 색깔, 그림자, 위치 변경*/
+    color: red;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px red;
+    text-align: center;
+}
+
+label {
+    /*로그인과 검색창의 위치선정, 밑줄 변경*/
+    float: right;
+    text-decoration: none;
+}
+
+a {
+    /*a태그 밑줄, 색깔변경*/
+    text-decoration-line: none;
+    color: black;
+}
+
+ul {
+    /*ul태그의 스타일변경*/
+    list-style: none;
+}
+
+.menu {
+    /*상단 카테고리 생성*/
+    list-style: none;
+    padding: 0%;
+    overflow: hidden;
+    background-color: limegreen;
+    clear: both;
+    margin: 1% 0% 0%;
+}
+
+.menu li {
+    /*카테고리의 그림자, 위치변경*/
+    float: left;
+    box-shadow: 2px 0px 7px green;
+}
+
+.menu li a {
+    /*카테고리 안에 있는 a태그의 스타일변경*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+}
+
+.menu a:hover {
+    /*카테고리에 마우스를 올리면 색깔변경*/
+    background-color: gray;
+}
+
+nav {
+    /*왼쪽 메뉴 틀 잡아줌, 위치선정*/
+    width: 7%;
+    float: left;
+    margin-right: 7%;
+}
+
+nav>ul {
+    /*왼쪽 메뉴 테두리영역과 텍스트영역간의 거리 설정*/
+    padding: 0%;
+}
+
+.nav_menu li {
+    /*왼쪽 메뉴 스타일변경*/
+    width: 180%;
+    background-color: lightgray;
+    line-height: 2em;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    box-shadow: 4px 4px 6px gray;
+    margin: 3%;
+    border: 1px solid gray;
+}
+
+.nav_menu li:hover {
+    /*왼쪽메뉴 마우스 올리면 색깔 변함*/
+    background-color: orange;
+}
+
+section {
+    /*중간 틀 잡아줌*/
+    width: 75%;
+    height: 600px;
+    background-color: greenyellow;
+    float: left;
+    overflow: scroll;
+}
+
+article {
+    /*articel의 간격과 정렬*/
+    margin: 1%;
+    display: inline-block;
+}
+
+article>img:hover {
+    /*마우스 올리면 이미지가 커짐*/
+    width: 300px;
+}
+
+.p {
+    /*상세설명 안 보여주게 함*/
+    display: none;
+}
+
+.arcicle_div:hover .p {
+    /*상세설명 마우스 올르면 보여주게 함*/
+    display: block;
+}
+
+aside {
+    /*오른쪽 메뉴의 틀 줍아줌*/
+    width: 10%;
+    height: 140px;
+    float: left;
+    margin-top: 10%;
+}
+
+aside>ul {
+    /*오른쪽 메뉴의 위치선정과 고정*/
+    float: left;
+    padding: 0%;
+    position: fixed;
+    margin: 1%;
+}
+
+.aside_menu li {
+    /*오른쪽 메뉴 스타일변경*/
+    width: 170%;
+    background-color: lightgray;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 3%;
+}
+
+li:hover:not(.active) {
+    /*고정메뉴를 hover 적용안시켜줌*/
+    background-color: orange;
+}
+
+li.active{
+    /*고정메뉴 색깔*/
+    background-color: white;
+}
+
+
+footer {
+    /*하단 메뉴 틀 줍아줌*/
+    width: 96%;
+    float: left;
+    margin: 1%;
+}
+
+h4 {
+    /*하단 메뉴 스타일 지정*/
+    background-color: gray;
+}
